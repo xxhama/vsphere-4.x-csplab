@@ -1,0 +1,37 @@
+vsphere_options = {
+  resource_pool_name = "xhama",
+  datastore_cluster_name = "SANDBOX_TIER4",
+  vsphere_user = "xhama",
+  vsphere_password = "notMyRealPassword",
+  vsphere_server = "vcsa.csplab.local",
+  vsphere_datacenter = "CSPLAB",
+  cluster_folder = "Sandbox/xhama",
+  cluster_name = "xhama"
+  vcenter_url = "vcsa.csplab.local"
+}
+mac_addresses = {
+  bootstrap = "00:50:56:bf:6d:66"
+  masters = [
+    "00:50:56:a5:d0:ec",
+    "00:50:56:a5:45:2d",
+    "00:50:56:a5:5e:08"
+  ]
+  workers = [
+    "00:50:56:a5:4d:5f",
+    "00:50:56:a5:9a:02",
+    "00:50:56:a5:bd:44"
+  ]
+  storage = [
+    "00:50:56:a5:f5:68",
+    "00:50:56:a5:d8:3d",
+    "00:50:56:a5:d7:06"
+  ]
+}
+
+ocp_options = {
+  base_domain = "vcsa.csplab.local"
+  pull_secret = ""
+  public_ssh_key = ""
+  ignition_file_server_url = "172.18.8.229"
+  ignition_file_server_port = 8080
+}
